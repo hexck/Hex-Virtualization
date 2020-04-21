@@ -29,13 +29,31 @@ _Here a radical approach may be useful: to remove all the .NET bytecode instruct
 <br>
 
 ## :bookmark_tabs: Examples
-<img width="600" src="https://i.ibb.co/tpCT5wF/dn-Spy-x86-7-Ag-Txej-Zs-X.png" alt="Example">
-<img width="600" src="https://i.ibb.co/xzjcB94/dn-Spy-x86-Ceo91j13-Gl.png" alt="Example">
+#### Before:
+```c#
+	public int Add()
+		{
+			return this._x + this._y;
+		}
+```
+#### After:
+```c#
+    [Hex.VM.Runtime.Util.Id("CJdAcuNrqHcIpi4GQsLjMMbSrvQr4MIXohvn2c3m92mrahj6M", 5204)]
+		public int Add()
+		{
+			return (int)Hex.VM.Runtime.VirtualMachine.RunVM(new object[]
+			{
+				this
+			});
+		}
+```
 
 
-
-## Resources used
+## Resources
 https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf <br>
+
+
+
 https://docs.microsoft.com/en-us/dotnet/api/system.reflection.emit.opcodes?view=netframework-4.8
 
 _If you got any questions feel free to contact me via discord Hexk#0001_
