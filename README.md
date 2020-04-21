@@ -4,9 +4,9 @@ Built with ❤︎ by <a href="https://twitter.com/hexkgg">Hexk</a>
 
 ## :guardsman: Why do you need Hex Virtualization ? 
 
-Hex.VM was built so that people can learn from it, for real-world use, other obfuscation techniques such as mutations, controlflow, and renamer would bring this vm to its full potential.
+Hex-Virtualization was built so that people can learn from it, for real-world use, other obfuscation techniques such as anti-tampering, mutations, controlflow, and renamer would bring this vm to its full potential.
 
-<a href="https://help.gapotchenko.com/eazfuscator.net/30/virtualization#Virtualization_Introduction"> Eazfuscator</a> describes it perfectly:<br>
+<a href="https://help.gapotchenko.com/eazfuscator.net/30/virtualization#Virtualization_Introduction"> Eazfuscator</a> describes perfectly what a vm does:<br>
 _"Many of us consider particular pieces of code especially important. May it be a license code check algorithm implementation, an innovative optimization method, or anything else equally important so we would want to protect it by any means possible. As we know, the traditional obfuscation techniques basically do renaming of symbols and encryption, thus leaving the actual algorithms — cycles, conditional branches and arithmetics potentially naked to eye of the skilled intruder._
 
 _Here a radical approach may be useful: to remove all the .NET bytecode instructions from an assembly, and replace it with something completely different and unknown to an external observer, but functionally equivalent to the original algorithm during runtime — this is what the code virtualization actually is."_
@@ -23,7 +23,7 @@ _Here a radical approach may be useful: to remove all the .NET bytecode instruct
 ## :fire: What does it do ?
 
 - [x] Virtualizes code into instructions which only Hex.VM can understand
-- [x] Has support for a decent amount of opcodes, as said, this is made for educational purposes and as such I believe these opcodes are enough for people to build on
+- [x] Has support for a decent amount of opcodes, as said, this is made for educational purposes and as such I believe these opcodes are enough for people to learn and build on
 - [x] Easy to use, understand, and build on
 
 <br>
