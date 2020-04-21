@@ -23,7 +23,7 @@ _Here a radical approach may be useful: to remove all the .NET bytecode instruct
 ## :fire: What does it do ?
 
 - [x] Virtualizes code into instructions which only Hex.VM can understand
-- [x] Has support for a decent amount of opcodes, as said, this is made for educational purposes and as such I believe these opcodes are enough for people to build on
+- [x] Has support for a decent amount of opcodes, as said, this is made for educational purposes and as such I believe these opcodes are enough for people to learn and build on
 - [x] Easy to use, understand, and build on
 
 <br>
