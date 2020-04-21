@@ -9,7 +9,6 @@ namespace Hex.VM.Runtime
 {
     public class Context
     {
-        public static int Current = 0;
         public List<HxInstruction> Instructions { get; }
         public Dictionary<HxOpCodes, HxOpCode> Handlers;
         public VmStack Stack;
