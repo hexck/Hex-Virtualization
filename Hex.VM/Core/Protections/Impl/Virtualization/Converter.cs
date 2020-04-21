@@ -173,7 +173,7 @@ namespace Hex.VM.Core.Protections.Impl.Virtualization
                     else
                         conv.Add(new HxInstruction(HxOpCodes.HxCall, new Value((i.OpCode == OpCodes.Callvirt ? "0":"1") +"2" + op.MDToken.ToInt32())));
                 }
-                else if (i.IsBr() || i.IsBrtrue() || i.IsBrfalse())
+                else if (i.IsBr() || i.IsBrtrue() || i.IsBrfalse() || i.OpCode == OpCodes.Leave || i.OpCode == OpCodes.Leave_S)
                 {
                     var val = new Value(Method.Body.Instructions.IndexOf((Instruction) i.Operand));
                     if (i.IsBrtrue())
