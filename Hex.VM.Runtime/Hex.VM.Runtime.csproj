@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE5E6BBE-61D5-4594-BFCA-7B3305A98F57}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hex.VM.Runtime</RootNamespace>
+    <AssemblyName>Hex.VM.Runtime</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context.cs" />
+    <Compile Include="Handler\HxOpCode.cs" />
+    <Compile Include="Handler\HxOpCodes.cs" />
+    <Compile Include="Handler\Impl\Add.cs" />
+    <Compile Include="Handler\Impl\And.cs" />
+    <Compile Include="Handler\Impl\Box.cs" />
+    <Compile Include="Handler\Impl\Ceq.cs" />
+    <Compile Include="Handler\Impl\Cgt.cs" />
+    <Compile Include="Handler\Impl\Clt.cs" />
+    <Compile Include="Handler\Impl\Custom\HxArg.cs" />
+    <Compile Include="Handler\Impl\Custom\HxArray.cs" />
+    <Compile Include="Handler\Impl\Custom\HxCall.cs" />
+    <Compile Include="Handler\Impl\Custom\HxConv.cs" />
+    <Compile Include="Handler\Impl\Custom\HxFld.cs" />
+    <Compile Include="Handler\Impl\Custom\HxLdc.cs" />
+    <Compile Include="Handler\Impl\Custom\HxLoc.cs" />
+    <Compile Include="Handler\Impl\Dup.cs" />
+    <Compile Include="Handler\Impl\Div.cs" />
+    <Compile Include="Handler\Impl\Ldtoken.cs" />
+    <Compile Include="Handler\Impl\Len.cs" />
+    <Compile Include="Handler\Impl\Mul.cs" />
+    <Compile Include="Handler\Impl\Neg.cs" />
+    <Compile Include="Handler\Impl\Newobj.cs" />
+    <Compile Include="Handler\Impl\Nop.cs" />
+    <Compile Include="Handler\Impl\Br.cs" />
+    <Compile Include="Handler\Impl\Brfalse.cs" />
+    <Compile Include="Handler\Impl\Brtrue.cs" />
+    <Compile Include="Handler\Impl\Not.cs" />
+    <Compile Include="Handler\Impl\Pop.cs" />
+    <Compile Include="Handler\Impl\Rem.cs" />
+    <Compile Include="Handler\Impl\Ret.cs" />
+    <Compile Include="Handler\Impl\Shl.cs" />
+    <Compile Include="Handler\Impl\Shr.cs" />
+    <Compile Include="Handler\Impl\Sub.cs" />
+    <Compile Include="Handler\Impl\Xor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\Helper.cs" />
+    <Compile Include="Util\HxInstruction.cs" />
+    <Compile Include="Util\IdAttribute.cs" />
+    <Compile Include="Util\Value.cs" />
+    <Compile Include="Util\VmArgs.cs" />
+    <Compile Include="Util\VmLocal.cs" />
+    <Compile Include="Util\VmStack.cs" />
+    <Compile Include="VirtualMachine.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+</Project>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hex.VM", "Hex.VM\Hex.VM.csproj", "{40A83DD8-5878-4433-80DB-B80339E33A6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hex.VM.Runtime", "Hex.VM.Runtime\Hex.VM.Runtime.csproj", "{CE5E6BBE-61D5-4594-BFCA-7B3305A98F57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hex.VM.Tests", "Hex.VM.Tests\Hex.VM.Tests.csproj", "{DBC66F83-2BA3-4D69-8F1D-6344F61A093A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40A83DD8-5878-4433-80DB-B80339E33A6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40A83DD8-5878-4433-80DB-B80339E33A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40A83DD8-5878-4433-80DB-B80339E33A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40A83DD8-5878-4433-80DB-B80339E33A6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE5E6BBE-61D5-4594-BFCA-7B3305A98F57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE5E6BBE-61D5-4594-BFCA-7B3305A98F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE5E6BBE-61D5-4594-BFCA-7B3305A98F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE5E6BBE-61D5-4594-BFCA-7B3305A98F57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBC66F83-2BA3-4D69-8F1D-6344F61A093A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBC66F83-2BA3-4D69-8F1D-6344F61A093A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBC66F83-2BA3-4D69-8F1D-6344F61A093A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBC66F83-2BA3-4D69-8F1D-6344F61A093A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
