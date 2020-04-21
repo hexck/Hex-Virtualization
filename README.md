@@ -31,21 +31,21 @@ _Here a radical approach may be useful: to remove all the .NET bytecode instruct
 ## :bookmark_tabs: Examples
 #### Before:
 ```c#
-	public int Add()
-		{
-			return this._x + this._y;
-		}
+    public int Add()
+    {
+        return this._x + this._y;
+    }
 ```
 #### After:
 ```c#
     [Hex.VM.Runtime.Util.Id("CJdAcuNrqHcIpi4GQsLjMMbSrvQr4MIXohvn2c3m92mrahj6M", 5204)]
-		public int Add()
-		{
-			return (int)Hex.VM.Runtime.VirtualMachine.RunVM(new object[]
-			{
-				this
-			});
-		}
+    public int Add()
+    {
+        return (int)Hex.VM.Runtime.VirtualMachine.RunVM(new object[]
+        {
+            this
+        });
+    }
 ```
 
 
