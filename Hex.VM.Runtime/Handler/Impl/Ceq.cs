@@ -8,7 +8,7 @@ namespace Hex.VM.Runtime.Handler.Impl
         {
             var y = vmContext.Stack.Pop().GetObject();
             var x = vmContext.Stack.Pop().GetObject();
-            vmContext.Stack.Push(y.Equals(x) ? 1:0);
+            vmContext.Stack.Push(y.Equals(x));
                 
             vmContext.Index++;
         }

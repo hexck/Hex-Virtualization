@@ -29,7 +29,7 @@ namespace Hex.VM.Runtime.Handler
         ARet ,// return  
         AXor, // y^x
         APop, // pop value on top of stack
-        ALen, // get len of array
+        ALdlen, // get len of array
         ADup, // dup on top of stack
         ADiv, // y / x
             

@@ -57,7 +57,7 @@ namespace Hex.VM.Runtime
                 {HxOpCodes.ASub, new Sub()}, // y-x
                 {HxOpCodes.ARet, new Ret()}, // return  
                 {HxOpCodes.APop, new Pop()}, // pop val on top of stack
-                {HxOpCodes.ALen, new Len()}, // length of array
+                {HxOpCodes.ALdlen, new Len()}, // length of array
                 {HxOpCodes.ADup, new Dup()}, // dup on top of stack
                 {HxOpCodes.ADiv, new Div()}, // divide
 
