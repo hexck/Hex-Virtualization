@@ -1,5 +1,5 @@
 # Hex Virtualization [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
-Made by <a href="https://github.com/hexck">Hexk</a>
+Developed by <a href="https://github.com/hexck">Hexk</a>
 <br><br>
 
 ## :guardsman: Why do you need Hex Virtualization ? 
